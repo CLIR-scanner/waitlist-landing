@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CLIR — Closed Beta Waitlist</title>
+  <meta name="description" content="Join the CLIR closed beta. Instant allergen + dietary preference scanner for groceries — built for families.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://clir-beta.vercel.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CLIR — Closed Beta Waitlist">
+  <meta property="og:description" content="Allergen + dietary preference scanner for groceries.">
+  <meta property="og:image" content="https://clir-beta.vercel.app/og-image.png">
+  <meta property="og:url" content="https://clir-beta.vercel.app/">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CLIR — Closed Beta Waitlist">
+  <meta name="twitter:description" content="Allergen + dietary preference scanner for groceries.">
+  <meta name="twitter:image" content="https://clir-beta.vercel.app/og-image.png">
+
+  <link rel="icon" href="/favicon.png">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+
+      <!-- ── Logo ── -->
+      <header class="header">
+        <a href="/" aria-label="CLIR home" class="logo-link">
+          <svg class="logo-svg" viewBox="0 0 29 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <g clip-path="url(#clip0_logo_h)">
+              <path d="M0 8.50125C0 13.1191 3.75857 16.8734 8.38169 16.8734V11.7163C6.67288 11.7163 5.28473 10.3298 5.28473 8.62288C5.28473 6.91601 6.67288 5.52942 8.38169 5.52942V0.125C3.75857 0.125 0 3.88337 0 8.50125Z" fill="#1C3A19"/>
+              <path d="M9.08789 6.57925V6.84278V10.3984V10.662C10.2163 10.662 11.1336 9.74568 11.1336 8.61858C11.1336 7.49147 10.2163 6.5752 9.08789 6.5752V6.57925Z" fill="#1C3A19"/>
+              <path d="M15.1202 0V16.9998H13.3262V0H15.1202Z" fill="#1C3A19"/>
+              <path d="M18.0925 2.77295C18.332 2.52969 18.6243 2.41211 18.9693 2.41211C19.3143 2.41211 19.6065 2.53374 19.846 2.77295C20.0855 3.01621 20.2032 3.30406 20.2032 3.64463C20.2032 3.98519 20.0855 4.25278 19.846 4.48793C19.6065 4.72308 19.3143 4.84065 18.9693 4.84065C18.6243 4.84065 18.332 4.72308 18.0925 4.48793C17.8531 4.25278 17.7354 3.97303 17.7354 3.64463C17.7354 3.31623 17.8531 3.01621 18.0925 2.77295ZM19.8704 7.83275V16.9996H18.0763V7.83275H19.8704Z" fill="#1C3A19"/>
+              <path d="M24.6593 7.83331V9.32125H24.7202C24.9475 8.77392 25.2803 8.3401 25.7268 8.02792C26.1733 7.71574 26.6888 7.55762 27.2732 7.55762C27.7806 7.55762 28.2717 7.70763 28.7507 8.00765L27.9308 9.61316C27.6385 9.36585 27.2732 9.24017 26.8349 9.24017C26.3681 9.24017 25.9825 9.33341 25.6781 9.52397C25.3737 9.71452 25.1504 9.98211 25.0084 10.3267C24.8703 10.6713 24.777 11.0119 24.7283 11.3444C24.6796 11.6768 24.6593 12.0579 24.6593 12.4917V16.9961H22.8652V7.82926H24.6593V7.83331Z" fill="#1C3A19"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_logo_h">
+                <rect width="28.79" height="16.9998" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <span class="beta-badge" aria-hidden="true">open</span>
+      </header>
+
+      <!-- ── Form section ── -->
+      <section id="form-section">
+        <h1 class="headline" id="form-title">Closed beta is now open.</h1>
+        <p class="subhead">Allergen + dietary scanner for groceries.</p>
+
+        <div class="spots" aria-hidden="true">
+          <span class="spots-bar"><span class="spots-fill"></span></span>
+          <span class="spots-num">Limited to <strong>100</strong> beta testers</span>
+        </div>
+
+        <div id="f-form-err" class="form-banner-error" role="alert" hidden>
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true" style="flex-shrink:0;margin-top:1px">
+            <circle cx="10" cy="10" r="9" stroke="#E63946" stroke-width="1.5"/>
+            <path d="M10 5.5v5M10 13.2v.8" stroke="#E63946" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span id="f-form-err-text"></span>
+        </div>
+
+        <form id="waitlist-form" class="form-card" novalidate aria-labelledby="form-title">
+
+          <!-- Email -->
+          <div class="field-group">
+            <label class="field-label" for="f-email">
+              Email <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input
+              id="f-email"
+              name="email"
+              type="email"
+              class="input"
+              required
+              aria-required="true"
+              aria-invalid="false"
+              aria-describedby="f-email-hint f-email-err"
+              autocomplete="email"
+              maxlength="254"
+              placeholder="you@example.com"
+            >
+            <p id="f-email-hint" class="field-hint">We'll send your invite here.</p>
+            <p id="f-email-err" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <!-- Cohort -->
+          <div class="field-group">
+            <fieldset class="cohort-fieldset">
+              <legend class="field-label">
+                Which cohort fits you? <span class="req" aria-hidden="true">*</span>
+              </legend>
+              <div class="radio-group">
+
+                <label class="radio-card" data-selected="false">
+                  <input type="checkbox" name="cohort" value="us-allergy">
+                  <div class="radio-content">
+                    <span class="radio-title">Allergy family</span>
+                    <span class="radio-desc">I or someone in my family manages food allergies.</span>
+                  </div>
+                </label>
+
+                <label class="radio-card" data-selected="false">
+                  <input type="checkbox" name="cohort" value="us-veg">
+                  <div class="radio-content">
+                    <span class="radio-title">Vegan / vegetarian</span>
+                    <span class="radio-desc">I follow a plant-based diet.</span>
+                  </div>
+                </label>
+
+                <label class="radio-card" data-selected="false">
+                  <input type="checkbox" name="cohort" value="us-ka">
+                  <div class="radio-content">
+                    <span class="radio-title">Korean American</span>
+                    <span class="radio-desc">I shop at H Mart / Mitsuwa / 99 Ranch and want bilingual labels.</span>
+                  </div>
+                </label>
+
+              </div>
+              <p id="f-cohort-err" class="field-error" role="alert" hidden></p>
+            </fieldset>
+          </div>
+
+          <!-- Source (optional) -->
+          <div class="field-group">
+            <label class="field-label" for="f-source">
+              Where did you hear about us?
+              <span class="optional">(optional)</span>
+            </label>
+            <input
+              id="f-source"
+              name="source"
+              type="text"
+              class="input"
+              autocomplete="off"
+              maxlength="64"
+              placeholder="e.g. Reddit, a friend, Instagram…"
+            >
+            <p id="f-source-err" class="field-error" role="alert" hidden></p>
+          </div>
+
+          <button type="submit" id="submit-btn" class="btn-primary">
+            <span id="submit-label">Join waitlist</span>
+            <span class="btn-arrow" aria-hidden="true">→</span>
+          </button>
+
+          <p class="consent">
+            By submitting, you agree to receive emails about the CLIR closed beta.          
+            <br>We collect email, cohort, and source only.
+            <a href="/privacy.html" class="consent-link">Privacy</a>
+          </p>
+
+        </form>
+      </section>
+
+      <!-- ── Success section ── -->
+      <section id="success-section" hidden role="status" aria-live="polite" aria-atomic="true">
+        <div class="success-card">
+          <div class="success-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="24" fill="#2A9D8F"/>
+              <path d="M14 24.5L20.5 31L34 17" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h2 id="success-title" class="success-title">You're on the list.</h2>
+          <p id="success-subtitle" class="success-subtitle">We'll send your invite to your email within a few days.</p>
+          <p id="success-cohort-wrap" class="success-cohort">Cohort: <strong id="success-cohort"></strong></p>
+          <button id="got-it-btn" class="btn-primary" type="button">Got it</button>
+        </div>
+      </section>
+
+      <!-- ── Footer ── -->
+      <footer class="footer">
+        <p class="notice">
+          Allergen and dietary preference matching only — no nutrition or calorie tracking yet. 
+          <br>Not medical advice.
+        </p>
+        <div class="footer-bottom">
+          <a class="footer-link">Inquiry: iamlyg9667@gmail.com</a>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
