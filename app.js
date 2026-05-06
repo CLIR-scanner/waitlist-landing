@@ -107,7 +107,7 @@ function showSuccess(alreadyRegistered, cohorts) {
   } else {
     successTitle.textContent    = "You’re on the list.";
     successSubtitle.textContent = "We’ll send your invite to your email within a few days.";
-    successCohortLabel.textContent = cohorts.map(c => COHORT_LABELS[c] || c).join(‘ · ‘);
+    successCohortLabel.textContent = cohorts.map(c => COHORT_LABELS[c] || c).join(' · ');
     successCohortWrap.hidden    = false;
   }
   formSection.hidden    = true;
